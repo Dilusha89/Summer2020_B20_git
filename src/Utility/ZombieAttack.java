@@ -4,6 +4,9 @@ import java.util.Scanner;
 public class ZombieAttack {
 
 
+
+
+
     }
 
         class Main {
@@ -31,20 +34,21 @@ public class ZombieAttack {
                         inhabitants[inhabitants.length - 1] /= 2;
                     }
                     for (int i = 1; i <= inhabitants.length - 2; i++) {
-                        if (inhabitants[i] > 0 && inhabitants[i - 1]>0 &&  inhabitants[i + 1]==0){
+                        if (inhabitants[i] > 0 && inhabitants[i - 1] > 0 && inhabitants[i + 1] == 0) {
                             inhabitants[i] /= 2;
                         }
-                        if (inhabitants[i] > 0 && inhabitants[i - 1]==0 && inhabitants[i+1]>0){
-                            if (inhabitants[i]==1) {
+                        if (inhabitants[i] > 0 && inhabitants[i - 1] == 0 && inhabitants[i + 1] > 0) {
+                            if (inhabitants[i] == 1) {
                                 inhabitants[i] /= 2;
                                 i++;
-                                if (i==7){
+                                if (i == 7) {
                                     i--;
                                 }
-                            }else {
-                                inhabitants[i] /= 2;}
+                            } else {
+                                inhabitants[i] /= 2;
+                            }
                         }
-                        if (inhabitants[i] > 0 && inhabitants[i - 1]==0 && inhabitants[i+1]==0){
+                        if (inhabitants[i] > 0 && inhabitants[i - 1] == 0 && inhabitants[i + 1] == 0) {
                             inhabitants[i] /= 2;
-    }
-}}}}
+                        }
+                    }}}}
